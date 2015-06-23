@@ -9,13 +9,13 @@ using namespace std;
 // following the Sieve of Eratosthenes
 Prime::Prime(const unsigned long& max) {
 
-  vector<bool> nList(max, true);
+  vector<bool> nList(max+1, true);
   
-  unsigned long p=2;
-  for(int p=2; p<max; p++) { 
+  unsigned long p;
+  for(int p=2; p<=max; p++) { 
     if (nList[p]) {
       value = p;
-      for(unsigned long i=p*p; i<=max; i+=p) {
+      for(unsigned long i=p*p; i<=max; i+=2*p) {
         nList[i] = false;
       }
     }
