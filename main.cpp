@@ -9,11 +9,11 @@ int main(int argc, char* argv[]) {
     return 1;
   }
 
-  long int to = atol(argv[1]);
+  unsigned long to = atol(argv[1]);
 
   Prime p(to);
 
-  cout << p.getMaxPrime() << endl;
+  cout << p.getValue();
 
   return 0;
 }

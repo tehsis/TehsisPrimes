@@ -1,11 +1,10 @@
 #include <vector>
 
 class Prime {
-  long int value;
-  std::vector<bool> nList;
+  unsigned long value;
 
   public:
-  Prime(long int&);
-  void getPrimes(void (*fp)(long int));
-  long int getMaxPrime();
+  Prime(const unsigned long&);
+  bool operator==(unsigned long);
+  long int getValue();
 };
