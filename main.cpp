@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include "prime.h"
 using namespace std;
+using namespace Tehsis;
 
 int main(int argc, char* argv[]) {
   if (argc < 2) {
